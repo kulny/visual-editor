@@ -4,7 +4,7 @@ Visual Editor is a fork of Flutter Quill. The main reason we separated from Quil
 architecture. We needed an easy to maintain code base, however the architecture of Quill made it
 really hard to follow the code flow and adding improvements was difficult at best. Therefore we
 decided to completely refactor the general architecture of Quill and reorganise it into modules,
-services, states and models. Due to these changes if you desire to migrate from Flutter Quill to
+services, states and models. Due to these changes you might consider to migrate from Flutter Quill to
 Visual Editor.
 
 ## Feedback Requested
@@ -20,8 +20,8 @@ guarantee this for the long run. Changes over the years might make the two versi
 
 ## Update Imports
 
-If you are using a decent IDE you should be able to autoimport the required files by using the
-context menu or pressing the autoimport hotkey.
+If you are using a decent IDE you should be able to auto-import the required files by using the
+context menu or pressing the auto-import hotkey.
 
 Before:
 `import 'package:flutter_quill/flutter_quill.dart';`
@@ -29,11 +29,11 @@ Before:
 After:
 `import 'package:visual_editor/visual-editor.dart';`
 
-Note that we renamed the `Text` class so we will no longer colide with the Text class from Flutter.
-
 ## Renamed Classes
 
 Most of the top classes have been renamed to better reflect the new architecture.
+
+Note that we renamed the `Text` class so we will no longer collide with the Text class from Flutter.
 
 - `QuillEditor` - `VisualEditor`
 - `QuillController` - `EditorController`
