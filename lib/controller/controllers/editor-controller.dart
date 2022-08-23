@@ -461,6 +461,17 @@ class EditorController {
     _state.refreshEditor.refreshEditor();
   }
 
+  // === MARKERS ===
+
+  void toggleMarkers(bool areVisible) {
+    _state.markersVisibility.toggleMarkers(areVisible);
+    _state.refreshEditor.refreshEditor();
+  }
+
+  bool getMarkersVisibility() {
+    return _state.markersVisibility.visibility;
+  }
+
   // === PRIVATE ===
 
   void _handleHistoryChange(int? length) {

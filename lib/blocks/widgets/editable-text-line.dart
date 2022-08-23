@@ -67,6 +67,7 @@ class EditableTextLine extends RenderObjectWidget {
     BuildContext context,
     covariant EditableTextLineRenderer renderObject,
   ) {
+    print('+++ EDITABLE TEXT LINE updateRenderObject');
     renderObject
       ..setState(_state)
       ..setLine(line)

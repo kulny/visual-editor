@@ -89,6 +89,13 @@ Multiple markers can be added on top of each other. Inspecting multiple markers 
 ## Storing Custom Data In Markers (WIP)
 Advanced use cases might require that markers store custom data such as UUIDs or whatever else the client app developers require. A callback method can be used to generate the custom data when a new marker is added from the dropdown. Beware that these IDs could be generated and then discarded if the author decided to cancel the edit. Therefore make sure you don't populate your DB eagerly unless the document was saved.
 
+## Hiding Markers
+Despite being part of the delta document the markers can be hidden on demand. Toggling markers from the editor controller can be useful for situations where the developers want to clear the text of any visual guides and show the pure rich text.
+
+```dart
+
+```
+
 ## How Markers Are Rendered (WIP)
 Similar to highlights that used the selection rendering logic we will render above the TextLine. We can't use TextSpan Styles to render the document markers since the background color already has this role.
 
